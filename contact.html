@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Rinaldi Anugerah - Kontak Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="Bahan/LogoBao.png" alt="Logo Brain Academy">
+            </a>
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Tentang Saya</a></li>
+            <li><a href="projects.html">Projek Saya</a></li>
+            <li><a href="contact.html" class = "active">Kontak Saya</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main id="contact">
+        <section class="contact-info">
+            <h2>KONTAK</h2>
+            <p>Jika ingin Menghubungi saya, Bisa melalui:</p>
+
+            <div class="contact-options">
+                <h3>Melalui Email</h3>
+                <p>Kirimkan email kamu ke: <span class="email-gwej">rldi3763@gmail.com</span></p>
+
+                <h3>Media Sosial:</h3>
+                 <div class="social-icons">
+                    <a href="https://www.instagram.com/rldi.a_/" target="_blank">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                    <a href="https://github.com/Shinomiyadesu23" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://www.tiktok.com/@rinaldi_303" target="_blank">
+                        <i class="fab fa-tiktok"></i> TikTok
+                    </a>
+                </div>
+
+                <h3>FORM</h3>
+                <form id="contact-form">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Pesan:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Kirim Pesan</button>
+                    <p id="form-message" style="display: none; color: green;"></p>
+                </form>
+            </div>
+
+            <p class="closing-message">Terima kasih udah mau datang ke website ini, Sampai Jumpa!!!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Muhammad Rinaldi Anugerah. Dibuat dengan bantuan Allah swt.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

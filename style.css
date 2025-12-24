@@ -1,0 +1,411 @@
+/* RESET DASAR */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Bahan/background.png');
+    background-size: cover;      
+    background-position: center;  
+    background-attachment: fixed;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* HEADER & NAVIGASI */
+header {
+    width: 100%;
+    color:white;
+    background-color: #333; /* Warna sesuai gambar Anda */
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;      
+    margin: auto;  
+    padding: 0 10px; 
+    box-sizing: border-box; 
+}
+
+.logo img {
+    height: auto;    
+    max-height: 70px; 
+    width: auto;
+    max-width: 100%;
+    display: block;
+    object-fit: contain; 
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px; /* Memberi jarak antar menu tanpa margin manual */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1.5em;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #5b5b5b; /* Warna Hover/Aktif */
+    border-radius: 5px;
+}
+
+/* MAIN CONTENT */
+main {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 70vh;
+}
+
+h1 {
+    color: #ffc107
+}
+h2 {
+    color:white
+}
+
+h3 {
+    color:white
+}
+/* SECTION HOME */
+.hero {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px 0;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tagline {
+    font-style: italic;
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+.spirit-text {
+    background-color: #606060; /* Warna ringan Brain Academy */
+    padding: 15px;
+    margin: 25px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    border-left: 5px solid #2c2c2c;
+}
+
+.cta-buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.cta-btn.primary {
+    background-color: #6c757d; 
+    color: #ffc107;
+}
+
+.cta-btn.primary:hover {
+    background-color: #1e7e34;
+}
+
+.cta-btn.secondary {
+    background-color: #6c757d; 
+    color: white;
+}
+
+.cta-btn.secondary:hover {
+    background-color: #5a6268;
+}
+
+/* SECTION TENTANG SAYA */
+.skills-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.skills-category {
+    flex: 1;
+    min-width: 250px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.skills-category ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+/* Membuat kotak transparan untuk halaman About */
+.about-me {
+    background-color: rgba(0, 0, 0, 0.7); /* Hitam transparan 70% */
+    padding: 40px;
+    border-radius: 15px;
+    margin: 20px auto;
+    color: #ffc107;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Pastikan judul tetap terbaca jelas */
+.about-me h2, .about-me h3, .about-me h4 {
+    color: #ffc107; /* Kuning emas agar senada dengan Kontak */
+}
+
+/* Mengatur list agar teksnya putih */
+.skills-category ul li {
+    color: white;
+}
+
+/* SECTION PROJEK */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.project-card {
+    border: 1px solid #9f9191;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.project-card .description {
+    font-size: 0.95em;
+    margin-bottom: 10px;
+}
+
+.project-card .tech {
+    font-size: 0.85em;
+    color: #6c757d;
+    font-weight: bold;
+}
+
+.project-card .view-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #ffc107;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Memberikan latar belakang pada setiap kartu projek */
+.project-card {
+    background-color: rgba(255, 255, 255, 0.1); /* Putih sangat tipis agar elegan */
+    backdrop-filter: blur(5px); /* Memberi efek kaca buram */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 12px;
+    color: white;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+/* Efek saat kartu projek disentuh (hover) */
+.project-card:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-10px);
+}
+
+/* Judul projek */
+.project-card h3 {
+    color: #ffc107;
+}
+
+/* Deskripsi projek */
+.project-card .description, .project-card .tech {
+    color: #e0e0e0; /* Putih keabu-abuan agar nyaman dibaca */
+}
+
+/* SECTION KONTAK */
+.contact-info {
+    text-align: center;
+}
+
+.contact-options ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.contact-options li {
+    margin: 5px 0;
+}
+
+.contact-options a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#contact-form {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: left;
+}
+
+#contact-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Penting agar padding tidak melebihkan lebar total */
+}
+
+#contact-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+#contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.closing-message {
+    margin-top: 40px;
+    font-size: 1.1em;
+    font-style: italic;
+    color: #ffffff;
+}
+
+/* Membuat kotak transparan di belakang teks kontak */
+.contact-info {
+    background-color: rgba(0, 0, 0, 0.7); /* Hitam transparan 70% */
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 800px; /* Membatasi lebar kotak agar tidak terlalu lebar */
+    margin: 0 auto;   /* Mengetengahkan kotak */
+    color: white;     /* Memastikan semua teks di dalamnya berwarna putih */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Memberi efek bayangan agar teks lebih 'timbul' */
+}
+
+/* Pastikan judul di dalam kontak juga berwarna terang */
+.contact-info h2, .contact-info h3 {
+    color: #ffc107; /* Warna kuning emas agar kontras dan terbaca jelas */
+    margin-bottom: 20px;
+}
+
+/* Mengatur link agar tidak hilang di background gelap */
+.contact-info a {
+    color: #00d4ff; /* Warna biru muda cerah */
+    text-decoration: underline;
+}
+
+/* Jika ada form, pastikan labelnya putih */
+#contact-form label {
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: white;
+    font-size: 0.9em;
+}
+
+/* Pengaturan khusus untuk layar HP (di bawah 768px) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: row; /* Tetap satu baris */
+        padding: 0 5px;
+    }
+
+    .logo img {
+        max-height: 40px; /* Perkecil sedikit logo di HP agar muat */
+    }
+
+    nav ul li a {
+        font-size: 14px; /* Perkecil teks menu sedikit */
+        padding: 8px 10px;
+    }
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white !important;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column; /* Ikon di atas, teks di bawah */
+    align-items: center;
+    gap: 5px;
+}
+
+/* Warna saat kursor menyentuh ikon */
+.social-icons a:hover {
+    color: #ffc107 !important; /* Berubah jadi kuning */
+    transform: translateY(-5px); /* Efek melompat sedikit */
+}
+
+/* Ukuran ikon saja */
+.social-icons i {
+    font-size: 2rem;
+}
+
+.email-gwej {
+    color: #ffc107 !important; 
+    font-weight: bold;         
+   
+}
